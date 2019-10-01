@@ -1,0 +1,29 @@
+{
+  "name": "authentication",
+  "version": "0.0.1",
+  "description": "email sms 인증 서비스",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "debug": "nodemon --inspect ./app.js"
+  },
+  "author": "Shinyoung",
+  "license": "MIT",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "formidable": "^1.2.1",
+    "memory-cache": "^0.2.0",
+    "morgan": "^1.9.1",
+    "nodemailer": "^6.2.1",
+    "nodemailer-sendgrid-transport": "^0.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

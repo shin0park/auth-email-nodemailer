@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>아이디 비밀번호 찾기</title>
+    <style>
+        h1 {
+            font-family: "Segoe UI";
+            font-size: 20px;
+            color: green;
+        }
+
+        p {
+            color: green;
+        }
+
+        #send_btn {
+            font-size: 15px;
+            font-family: "Segoe UI";
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>아이디 찾기</h1>
+        <form id="auth_form" name="auth_form">
+            <fieldset>
+                <legend>본인확인 이메일로 인증</legend>
+                <div><input id="email" type="text" name="email" placeholder="이메일 주소를 입력하세요"></div>
+                <button id="send_btn" type="button" onclick="authEmail()">인증번호 받기</button>
+                <div><input id="auth_number" type="text" name="auth_number" placeholder="인증번호를 입력하세요"></div>
+                <button id="auth_btn" type="button" onclick="authNumber()">인증하기</button>
+                <div id="viewtimer"></div>
+            </fieldset>
+        </form>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+
+</html>
